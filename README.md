@@ -2,16 +2,20 @@
 
 Use git (it's good!) and deploy your static html/css to Heroku - for free.
 
+## Setup
+
 Inside your project's directory:
 
     /config.ru  <-- copy it from this repo
     /public/    <-- throw here all your static files
 
+## Use git to manage your code
+
 If you're not using git yet, install it and start using it right now:
 
-    `git init .`
-    `git add *`
-    `git commit -am "first commit"`
+    git init .
+    git add *
+    git commit -am "first commit"
 
 If you're already using git, just commit your last changes:
 
@@ -32,21 +36,22 @@ Deploy
 Enjoy: you can visit your `/public/index.html` file as `/`, `/index` or `/index.html`.
 Any other `/foo/bar.html` will be served also from `/foo/bar`.
 
-In the future:
+### In the future...
 
-- commit your changes with git
+You will commit your changes with git:
 
     git add *
     git commit -am "describe your changes"
 
-- deploy again to heroku
+and deploy them to Heroku:
+
 
     git push heroku master
 
-Bonus:
-
-- rename your app:
+### Renaming your app to get an awesome.heroku.com subdomain
 
     heroku rename new-name
 
-- Heroku is an awesome platform, [learn more about it...](http://devcenter.heroku.com/)
+### Colophon
+
+Heroku is an awesome platform, make yourself a favor and [learn more about it...](http://devcenter.heroku.com/)
