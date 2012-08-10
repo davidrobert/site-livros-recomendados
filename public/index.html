@@ -1,12 +1,656 @@
-<!doctype html>
-<html lang=en>
-  <head>
-    <title>rack rocks</title>
-    <meta charset=utf-8>
-    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
-</head>
-<body>
-  <h1>rack rocks</h1>
-  <p><a href="http://github.com/raul/rack-static-boilerplate">rack static boilerplate</a>, by <a href="http://raul.murciano.net">Raul Murciano</a></p>
-</body>
-</html>
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://thecodeplayer.com/ -->
+<html lang="en" class=" -webkit-"><script src="./files/cb=gapi.loaded_0" async=""></script><script id="abine.stub.Google Analytics">var abPrm={};var abNoOp=function(i,a){return (a&&a.length?a[0]:null)||true;},abSC=function(n,v){document.cookie=n+'='+v+';path=/;expires='+(new Date((new Date()).getTime()+(30000*60*60*24))).toGMTString();},abGC=function(n){return document.cookie.indexOf(n+'=')!=-1;},abAddNoOpMethods=function(o,m){m=m.split(',');for(var i=0;i<m.length;i++){if(m[i].match(/^#/)){o['get'+m[i].substr(1)]=o['set'+m[i].substr(1)]=abNoOp;}else{o[m[i]]=abNoOp;}}};var abClickEvent=function(n){if(n.click){n.click();}else{var e=n.ownerDocument.createEvent('MouseEvents');e.initMouseEvent('click',true, true, n.ownerDocument.defaultView, 1,0,0,0,0,false,false,false,false,0,null);n.dispatchEvent(e);}};var abTrkr={},abGT=function(){return abTrkr},_gat={_getTracker:abGT,_createTracker:abGT,_getTrackerByName:abGT,_anonymizeIp:abNoOp},urchinTracker=__utmSetTrans=__utmLinkerUrl=__utmLinkPost=__utmSetVar=__utmVisitorCode=abNoOp,_gaq={_createAsyncTracker:abTrkr,_getAsyncTracker:abTrkr,push:function(a){for (var b = arguments, c = 0, d = 0; d < b.length; d++) {try {if (typeof b[d] === 'function') b[d]();else {var e = '', f = b[d][0], k = f.lastIndexOf('.');k > 0 && (e = f[z](0, k), f = f[z](k + 1));var p = e == '_gat' ? _gat : e == '_gaq' ? _gaq : _gat._getTracker(e);p[f].apply(p, b[d].slice(1))}} catch (r) {c++}}return c;}};abAddNoOpMethods(abTrkr,'_deleteCustomVar,_getName,_getAccount,_getVersion,_getVisitorCustomVar,_initData,_setAccount,_setCookiePersistence,_setCustomVar,_setSampleRate,_setSessionTimeout,_setSessionCookieTimeout,_setVar,_setVisitorCookieTimeout,_trackPageview,_setAllowAnchor,_setCampContentKey,_setCampMediumKey,_setCampNameKey,_setCampNOKey,_setCampSourceKey,_setCampTermKey,_setCampaignTrack,_setCampaignCookieTimeout,_setCookieTimeout,_setReferrerOverride,_cookiePathCopy,_getLinkerUrl,_linkByPost,_setAllowHash,_setAllowLinker,_setCookiePath,_setDomainName,_addItem,_addTrans,_trackTrans,_trackEvent,_addIgnoredOrganic,_addIgnoredRef,_addOrganic,_clearIgnoredOrganic,_clearIgnoredRef,_clearOrganic,_trackSocial,_getClientInfo,_getDetectFlash,_getDetectTitle,_setClientInfo,_setDetectFlash,_setDetectTitle,_getLocalGifPath,_getServiceMode,_setLocalGifPath,_setLocalRemoteServerMode,_setLocalServerMode,_setRemoteServerMode,_trackPageLoadTime');abTrkr._link=__utmLinker=function(l){if(l)location.href=l;};</script><script id="abine.stub.Facebook Connect">var abPrm={};var abNoOp=function(i,a){return (a&&a.length?a[0]:null)||true;},abSC=function(n,v){document.cookie=n+'='+v+';path=/;expires='+(new Date((new Date()).getTime()+(30000*60*60*24))).toGMTString();},abGC=function(n){return document.cookie.indexOf(n+'=')!=-1;},abAddNoOpMethods=function(o,m){m=m.split(',');for(var i=0;i<m.length;i++){if(m[i].match(/^#/)){o['get'+m[i].substr(1)]=o['set'+m[i].substr(1)]=abNoOp;}else{o[m[i]]=abNoOp;}}};var abClickEvent=function(n){if(n.click){n.click();}else{var e=n.ownerDocument.createEvent('MouseEvents');e.initMouseEvent('click',true, true, n.ownerDocument.defaultView, 1,0,0,0,0,false,false,false,false,0,null);n.dispatchEvent(e);}};var FB=FBConnect={Event:{},XFBML:{},Canvas:{EarlyFlush:{addResource:abNoOp}},Data:{}},facebook_onload=abNoOp;abAddNoOpMethods(FB,'init,logout,api,ui');FB.login=function(cb,scope){var p=document.getElementById('abPLFBH');if(p)abClickEvent(p);};FB.getAuthResponse=FB.getLoginStatus=FB.requireSession=FB.getSession=function(){return;};FB.Connect=FB;abAddNoOpMethods(FB.Event,'subscribe,unsubscribe');FB.XFBML.parse=abNoOp;abAddNoOpMethods(FB.Data,'query,waitOn');abAddNoOpMethods(FB.Canvas,'getPageInfo,scrollTo,setAutoResize,setDoneLoading,setSize,startTimer,stopTimer');var FB_RequireFeatures=abNoOp;/*if(window.fbAsyncInit)window.fbAsyncInit();*/</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  	<meta charset="utf-8">
+		<title>Livros de Programadores</title>
+		<!--<base href="http://thecodeplayer.com/">--><base href=".">
+		<style media="" data-href="css/timeline.css">*{ margin: 0; padding: 0;}
+a {outline: 0;}
+
+body {
+	background: #555;
+	font-family: arial, verdana, sans-serif;
+	font-size: 12px;
+	line-height: 175%;
+	
+	background: -linear-gradient(top, #ebeff2 0%, #fff 100%);
+}
+
+#header {}
+#logo { margin: 25px 0; }
+#logo .light {color: #9bc90d; }
+#logo a {font-family: 'Crete Round', serif; text-decoration: none; font-weight: normal; font-style: italic; font-size: 24px; font-weight: bold;color: #79a70a;}
+
+h1.banner {
+	font-size: 36px;
+}
+h2.banner {
+	font-size: 18px;
+	color: #666;
+}
+.banner {
+	font-weight: normal;
+	text-align: center;
+	line-height: 150%;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+#subheader {background: #9bc90d; margin: 0 0 25px 0; padding: 20px; color: #fff; font-size: 16px; font-weight: normal; font-family: arial; overflow: hidden; clear: both;}
+
+.subhead_block{width: 48%; float: left; }
+.subhead_block:nth-child(1) {margin-right: 2%;}
+.subhead_block h2 {font-size: 14px; width: 75px; background: #79a70a; height: 55px; text-align: center; padding: 5px; line-height: 21px; padding-top: 20px; float: left; margin-right: 15px; text-transform: uppercase; 
+	border-radius: 10px;
+	border: 2px dashed rgba(255, 255, 255, 0.6);
+}
+.subhead_block h2 .curly {font-family: georgia; font-style: italic; text-transform: lowercase; font-size: 18px;}
+.subhead_block p {margin: 10px 0;}
+
+#user_nav ul li { margin: 0 0 10px 10px; display: block; float: right; }
+#user_nav ul li a {background: #fff; font-size: 12px; padding: 5px 10px; font-family: arial; color: #9bc90d; font-weight: bold; display: block;text-decoration: none; border-radius: 5px;}
+#user_nav ul li a.highlight {background: #9bc90d; color: #fff;}
+
+#wrapper {padding-top: 90px;}
+#content { padding: 0 75px;}
+
+#sidebar {float: left; width: 265px; padding: 0 20px;  background: #fff; }
+
+.main { }
+.main h2 {
+	color: #9bc90d; text-decoration: none;
+	font-family: arial, verdana; font-size: 15px;  
+	
+	background: #9bc90d;
+	color: #fff; padding: 5px 10px;
+}
+
+#footer {
+	padding: 20px; background: rgba(0, 0, 0, 0.10); color: #333; margin: 20px 0 0 0; text-align: center;
+	opacity: 1;
+	box-shadow: 0px -1px 0px rgba(0,0,0,0.1), inset 0px 1px 0px rgba(255,255,255,0.6);
+	-webkit-transition: 0.10s ease-in;
+}
+#footer:hover { opacity: 1; color: #333; }
+
+#headstrip {background: #9bc90d; height: 31px;}
+#headstrip ul{ float: left; margin-bottom: 0; margin-left: 0;}
+#headstrip ul.filter { float: right; }
+#headstrip ul li { float: left; list-style-type: none;position: relative; margin-bottom: 0;}
+#headstrip ul li a, #search .submit{text-decoration: none; color: #fff; padding: 5px 10px; display: block; font-weight: bold; background: transparent; border: 0 none; margin: 0;}
+#headstrip ul li.active { background: #fff; }
+#headstrip ul li.active a, #headstrip ul li.active #search .submit {color: #79a70a; }
+
+#headstrip ul li ul {width: 150px; position: absolute; top: 100%; background: #9bc90d; z-index: 1; display: none; }
+#headstrip ul li ul li {float: none;  }
+#headstrip ul li:hover ul {display: block;}
+
+#headstrip ul li ul.tags {width: 300px; left: -100px;}
+#headstrip ul li ul.tags li {float: left;}
+#headstrip ul li ul.tags li a {font-size: 11px;}
+
+.main .wt_listing { overflow: hidden; width: 615px; margin-top: 0px; padding: 0 10px; margin-left: 0;}
+.main .wt_listing li {
+	list-style-type: none; float: left; 
+	font-size: 14px; padding: 20px 0; 
+	margin: 0 10px;
+	position: relative; width: 595px;
+	
+	/*background: -linear-gradient(bottom, #ebeff2 0%, #fff 100%);
+	box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.3);*/
+	
+	border-bottom: 1px solid #ccc;
+}
+.wt_listing li p {margin-bottom: 0;}
+h3 {font-family: arial, verdana; font-size: 16px; line-height: 20px; color: #9bc90d; margin-bottom: 10px;}
+
+.wt_screenshot {width: 225px; height: 150px; overflow: hidden; text-align: center; border: 1px solid #ccc; float: left; margin-right: 15px;}
+
+.author_listing li{float: left; border: 0 none; width: auto; padding: 0 1px 16px 0; list-style-type: none; position: relative;}
+.author_listing .wt_screenshot {width: 130px; height: 86px;}
+
+.author_listing .author_wt_expanded {position: absolute; top: 0; left: 0; display: none;}
+
+.wt_description { float: left; width: 338px; padding: 5px 15px 0 0; color: #666; }
+.wt_description h3 {margin-bottom: 0;}
+.wt_description h3 a {color: #9bc90d; text-decoration: none;}
+
+.edit, .delete {
+	padding: 5px 10px;
+	font-size: 11px;
+	text-decoration: none;
+	background: #999;
+	font-weight: bold;
+	color: #fff;
+	margin-right: 10px;
+	border: 0 none;
+	font-weight: normal;
+	
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.edit { 
+	background: -webkit-linear-gradient(top, #ead700 0%, #c9a500 100%);
+}
+.edit:hover {
+	background: -webkit-linear-gradient(bottom, #ead700 0%, #c9a500 100%);
+}
+
+.delete {
+	background: -webkit-linear-gradient(top, #ff712b 0%, #cc2a05 100%);
+}
+.delete:hover {
+	background: -webkit-linear-gradient(bottom, #ff712b 0%, #cc2a05 100%);
+}
+.edit_profile {float: right; padding: 4px 8px; margin-right: 0; font-size: 12px; margin-top: -5px;}
+
+.wt_thumb {display: block; }
+
+.wt_listing li:hover .wt_description {
+	/*right: -75px;*/
+}
+.wt_listing li:hover .wt_screenshot {/*width: 300px;*/}
+
+
+#search { float: right; overflow: hidden; padding: 2px; }
+#search input { border: 1px solid #ccc; outline: none; padding: 2px 0; margin: 3px; width: 100px; float: left;
+	-webkit-transition: all 0.1s ease-in;
+}
+#search .submit {width: auto; height: 28px; padding: 5px;}
+#search input:focus {
+	width: 100px;
+}
+#search span {
+	padding: 5px 7px 1px 2px;
+	float: left;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.sblock { margin: 20px 0; padding: 0 0 10px 0 ; border-bottom: 1px solid #ddd; overflow: hidden; }
+
+/*.tags {overflow: hidden;}
+.tags li {float: left; list-style-type: none; margin: 0 5px 5px 0; 
+	
+	
+}
+.tags li a{color: #fff; text-decoration: none; font-size: 11px; background: #aaa; padding: 5px 5px 0 5px; display: block;
+	border-radius: 5px;
+}
+.tags li a:hover {background: #666;}
+*/
+.wt_listing li p.cite {opacity: 0.75; margin-bottom: 10px; font-size: 12px;}
+.cite:hover {opacity: 1;}
+.author{color: #f60;}
+
+.social .twitter-share-button, .social .fb-like{
+	float: left; overflow: hidden; 
+}
+
+.wt_listing li:hover .twitter-share-button, .wt_listing li:hover .fb-like {opacity: 1;}
+
+@font-face
+{
+	font-family: Titillium;
+	src: url("http://thecodeplayer.com/css/fonts/TitilliumText22L005.otf");
+}
+@font-face
+{
+	font-family: normaltext;
+	src: url("http://thecodeplayer.com/css/../fonts/CartoGothicStd-Book.otf");
+}
+@font-face
+{
+	font-family: museo;
+	src: url("http://thecodeplayer.com/css/../fonts/MuseoSans_500.otf");
+}
+
+
+
+
+.box { width: 595px; padding: 20px;}
+.main h1 { color: #9bc90d; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #9bc90d;}
+.main h1 a {color: #9bc90d; text-decoration: none; }
+
+.normaltext p, .normaltext ol, .normaltext ul {margin-bottom: 10px;}
+.normaltext ol, .normaltext ul {margin-left: 15px;}
+.normaltext ol li, .normaltext ul li {margin-bottom: 5px;}
+
+form .input_control {padding:  0 0 10px 0; }
+form label {display: block;  padding: 5px 0 0 0; font-weight: bold; color: #666;}
+form input, form textarea {border: 2px solid #ccc; padding: 5px; width: 200px;}
+form input[type='checkbox'], form input[type='radio'] {width: auto; padding: 5px;}
+
+.btn {width: auto; padding: 5px 10px; background: #79a70a; border: 0 none; font-weight: bold; color: #fff; margin-top: 10px; display: inline-block; text-decoration: none; line-height: 175%;}
+
+.half_section {width: 50%; float: left;}
+.overflow {overflow: hidden;}
+
+/* Feedback yo */
+#feedback {
+	right: 0; margin-right: -7px; height: 102px; top: 40%; width: 42px; background-color: #32312E;
+	background-image: url("http://thecodeplayer.com/css/../images/feedback_trans_tab.png");
+	background-repeat: no-repeat; color: white; cursor: pointer; overflow: hidden; position: fixed;
+	text-indent: -100000px; z-index: 100000;
+}
+
+.form-stacked {
+	padding-left: 0;
+}
+
+.form-stacked label .help-block {
+	font-weight: normal;
+	font-style: italic;
+}
+
+.shift-left {
+	float: left;
+}
+.shift-right {
+	float: right;
+}
+
+.pull-right{float:right;}
+.pull-left{float:left;}
+.hide{display:none;}
+.show{display:block;}
+.close {font-size: 20px;font-weight: bold;line-height: 18px;color: #000000;text-shadow: 0 1px 0 #ffffff;opacity: 0.2;filter: alpha(opacity=20);text-decoration: none;float:right;}
+.close:hover {color: #000000;text-decoration: none;opacity: 0.4;filter: alpha(opacity=40);cursor: pointer;}
+.modal-backdrop{background-color:#000000;position:fixed;top:0;left:0;right:0;bottom:0;z-index:10000;}.modal-backdrop.fade{opacity:0;}
+.modal-backdrop,.modal-backdrop.fade.in{filter:alpha(opacity=80);-khtml-opacity:0.8;-moz-opacity:0.8;opacity:0.8;}
+.modal{position:fixed;top:50%;left:50%;z-index:11000;width:560px;margin:-250px 0 0 -280px;background-color:#ffffff;border:1px solid #999;border:1px solid rgba(0, 0, 0, 0.3);*border:1px solid #999;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;-webkit-box-shadow:0 3px 7px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 3px 7px rgba(0, 0, 0, 0.3);box-shadow:0 3px 7px rgba(0, 0, 0, 0.3);-webkit-background-clip:padding-box;-moz-background-clip:padding-box;background-clip:padding-box;}.modal .close{margin-top:10px;}
+.modal.fade{-webkit-transition:opacity .3s linear, top .3s ease-out;-moz-transition:opacity .3s linear, top .3s ease-out;-ms-transition:opacity .3s linear, top .3s ease-out;-o-transition:opacity .3s linear, top .3s ease-out;-webkit-transition:opacity .3s linear, top .3s ease-out;top:-25%;}
+.modal.fade.in{top:50%;}
+.modal-header{border-bottom:1px solid #eee;padding:5px 15px;}
+.modal-body{padding:15px;}
+.modal-body form{margin-bottom:0;}
+.modal-footer{background-color:#f5f5f5;padding:14px 15px 15px;border-top:1px solid #ddd;-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;-webkit-box-shadow:inset 0 1px 0 #ffffff;-moz-box-shadow:inset 0 1px 0 #ffffff;box-shadow:inset 0 1px 0 #ffffff;zoom:1;margin-bottom:0;}.modal-footer:before,.modal-footer:after{display:table;content:"";zoom:1;}
+.modal-footer:after{clear:both;}
+.modal-footer .btn{float:right;margin-left:5px; margin-top: 0;}
+.modal .popover,.modal .twipsy{z-index:12000;}
+.fade{-webkit-transition:opacity 0.15s linear;-moz-transition:opacity 0.15s linear;-ms-transition:opacity 0.15s linear;-o-transition:opacity 0.15s linear;-webkit-transition:opacity 0.15s linear;opacity:0;}.fade.in{opacity:1;}
+#feedback_modal h3 {padding: 10px 0 7px 0; margin-bottom: 0;}
+#feedback_modal form label {padding: 0;}
+
+.sorry {text-align: center; padding: 100px 0;}
+.loader {padding-top: 10px;}
+
+.greentext {color: #9bc90d;}
+.redtext {color: #f00;}
+
+.wt_status {font-weight: bold;}
+.wt_status_0 {color: #C9A500;}
+.wt_status_1 {color: #577904;}
+.wt_status_2 {}
+.wt_status_3 {}
+
+
+
+
+
+/* New home page design VM style*/
+body { font-family: arial, verdana; line-height: 125%; 
+	/*background: url(http://www.dinpattern.com/tiles/light-tile.gif); */
+	/*background: url("http://thecodeplayer.com/css/../images/darkbg1.png");*/
+	/*background: url(http://subtlepatterns.com/patterns/hexellence.png);*/
+	background: url("http://thecodeplayer.com/css/../images/scribble_light.png");
+	background: -webkit-linear-gradient(top, #C1C8CB, #E3EAED);
+	background: #C1C8CB;
+}
+
+.vm {position: relative; margin-top: 60px;}
+.vm>li {
+	list-style-type: none; 
+	padding: 15px;
+	width: 200px; 
+	background: rgba(255, 255, 255, 1);
+	border-radius: 5px;
+	
+	/*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);*/
+}
+.vm>li:hover {
+	background: rgba(255, 255, 255, 1);
+	
+	box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15);
+}
+.vm>li .title {
+	border-top: 1px solid #ccc; 
+	padding-bottom: 5px;
+	margin: -15px;
+	margin-top: 15px; 
+	padding: 15px 20px;
+}
+.vm>li .title a {
+	color: #333; display: block;
+	text-decoration: none;
+	font-weight: bold; 
+	font-size: 13px;
+	line-height: 160%;
+}
+
+.vm>li img {display: block; border-radius: 3px; width: 100%; }
+.thumbnail {position: relative; display: block; overflow: hidden;}
+.thumbnail::before {
+	width: 100%; height: 100%;
+	position: absolute; top: 0; left: 0;
+	content: ''; 
+}
+
+
+.popular {
+	position: absolute;
+	right: -5px; top: -5px;
+	z-index: 1;
+	overflow: hidden;
+	width: 75px; height: 75px; text-align: right;
+}
+.popular span {
+	font-size: 10px; font-weight: normal; color: #fff; text-transform: uppercase; text-align: center;
+	font-weight: bold; line-height: 20px;
+	-webkit-transform: rotate(45deg);
+	width: 100px; display: block;
+	
+	background: #333;
+	background: -webkit-linear-gradient(top, #9BC90D 0%, #79A70A 100%);
+	
+	box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+	
+	position: absolute;
+	top: 19px; right: -21px;
+	
+}
+.popular span::before {
+	content: '';
+	position: absolute; left: 0px; top: 100%;
+	z-index: -1;
+	border-left: 3px solid #579500;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #579500;
+}
+.popular span::after {
+	content: '';
+	position: absolute; right: 0%; top: 100%;
+	z-index: -1;
+	
+	border-right: 3px solid #579500;
+	border-left: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #579500;
+}
+
+header {
+	background: #ccc; padding: 10px;
+	background: #FAF7F7;
+	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+	
+	background: -webkit-linear-gradient(top, #f4f4f4 0%, #E8E9E8 100%);
+	background: -webkit-linear-gradient(top, #666 0%, #555 100%);
+	position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+}
+header .social {
+	float: right;
+}
+
+header .social .social_box {
+	float: right; margin-right: 5px;
+}
+
+header .social .twitter-follow-button {width: 150px !important;}
+header .social #___plusone_0 {width: 32px !important;}
+header .social .fb-like {width: 46px;}
+
+.logo {font-family: 'Crete Round', serif; text-decoration: none; font-weight: normal; font-style: italic; font-size: 18px; font-weight: bold;color: #eee; display: block; padding-left: 10px; }
+.logo .superscript {font-size: 60%; vertical-align: super; padding: 0 5px; font-family: serif;}
+.labels {
+	float: right;
+	overflow: hidden;
+}
+
+.labels li {
+	list-style-type: none; float: left;
+}
+.labels li a {
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 12px;
+	display: block;
+	padding: 0 10px;
+}
+
+.clear {clear: both;}
+
+.vm > li.carbonad_item {
+	height: 215px;
+}
+
+.carbonad {
+	padding: 0 25px;
+	border: 0 none !important;
+	background: #efefef !important;
+}
+</style>
+		<link href="./files/css" rel="stylesheet" type="text/css" data-inprogress="">
+		<link href="http://thecodeplayer.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link rel="apple-touch-icon" href="http://thecodeplayer.com/apple_icon.png">
+		<script type="text/javascript" async="" src="./files/plusone.js" gapi_processed="true"></script><script type="text/javascript" async="" src="./files/ga.js"></script><script type="text/javascript" async="" src="./files/azcarbon_2_1_0_VERT"></script><script id="twitter-wjs" src="./files/widgets.js"></script><script id="facebook-jssdk" src="./files/all.js"></script><script src="./files/prefixfree.js" type="text/javascript"></script>
+		
+		<meta name="description" content="TheCodePlayer plays code like a video helping people to teach and learn front end technologies like HTML5, CSS3, Javascript, Jquery easily, quickly and interactively.">
+		<meta name="keywords" content="HTML5, CSS3, Javascript, Jquery, Tutorials, Walkthroughs, Learn HTML5, Learn CSS3">
+
+	<style>#adzerk_by { display:none} .carbonad { background-color:#FBFBFB;border:2px solid #E8E8E8;height:215px;line-height:1.2;width:150px; }.carbonad-img { float:left;height:100px;margin-left:11px;margin-top:11px;width:130px; } .carbonad-text { color:#545454;float:left;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:normal;height:50px;margin-left:15px;margin-top:9px;width:119px; } .carbonad-text a { color: #545454;text-decoration: none;font-weight: bold; } .carbonad-tag { color:#999999;float:left;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:normal;margin-left:17px;margin-top:15px;padding-top:5px; } .carbonad-tag a { color: #999999;text-align: center;text-decoration: none;font-weight: bold; }</style><script>window["_GOOG_TRANS_EXT_VER"] = "1";</script><style type="text/css">.jlhlebbhengjlhmcjebbkambaekglhkf {top: 0px; left: 0px;min-width: 30px;max-width: 300px;font-size: 13px;font-family: arial, helvetica, sans-serif;opacity: .93;padding:0px;position:absolute;display:block;z-index: 999997;font-style: normal;font-variant: normal;font-weight: normal;}#jlhlebbhengjlhmcjebbkambaekglhkf_up{text-align: center;padding:0px;margin: 0px;}#jlhlebbhengjlhmcjebbkambaekglhkf_cont{background-color: #729FCF;font-family: arial, helvetica, sans-serif-webkit-box-shadow: #729FCF 0px 0px 2px;color: #FFFFFF;padding:7px;-webkit-border-radius: 5px;}#jlhlebbhengjlhmcjebbkambaekglhkf_down{text-align: center;padding:0px;margin: 0px;}</style></head>
+	<body><div style="display: none; " id="abPLFBH" viastub="1" abpl="1"></div>
+	
+<!-- 
+<a href="http://thecodeplayer.com/#" id="feedback" data-controls-modal="feedback_modal" data-backdrop="true" data-keyboard="true">Feedback</a>
+-->
+
+<div id="feedback_modal" class="modal hide fade">
+	
+	<div class="modal-footer">
+		<a href="http://thecodeplayer.com/#" class="btn primary" id="share_feedback">Share</a>
+		<!--<a href="#" class="btn secondary">Secondary</a>-->
+	</div>
+</div>
+	
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=163181677023";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<header>
+			<!--<ul class="labels">
+				<li>
+					<form id="search">
+						<input type="text" name="search" id="keyword" value="" placeholder="Search...">
+					</form>
+				</li>
+			</ul>-->
+			<!--
+			<div class="social">
+				<div class="social_box">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAUCAIAAACWDSOoAAAABGdBTUEAALGPC/xhBQAAAU5JREFUSEtj/Pfv35NXX95++P77zz8GugNWFiYRAU5pMR6GRy8+Xb//9vW7r28GAr1++wVo++MXnxjO3Xj56u2XAXEExFKg7edvvGQ4deX5ADoCYjXQDVjckVCxxjpyBh4EVEBdp2N3B35HQGQHzB3FXdv+gwGQQYw7iFED9wwJ4QF0wdOXn/YfvZ1UvgjNDqxcGroD6Ah4lCHHC1Yrqe+OwJwls1efBobH+RsvgAwgl6TwgCvG6gd8+QUtncJTBq70gSdekB0BD0LMoCItfQDDg5h4gViDlq3Q/IaW3WjrDohrIFbiTy443ZHTvBkNASPl3qN3EEEy0geyFhLiBdMdwGoZjzuQ4wseL2gJguR0Ciy25VwbLEOnAEmsDDqV69Qts4kxDZQ+gHXuoKj3gW2QAWwHAYMA2g4CJkCgUy7cfAUMHPojoL2PX34CugEAZwNKO/hX+zQAAAAASUVORK5CYII=" width="45px" height="20px" style="cursor: pointer; " abfacebookconnect="1" abpl="1" id="abFacebookConnect_0"><div class="fb-like" data-href="http://facebook.com/thecodeplayer" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font="arial" abfacebookconnect="1"></div>
+				</div>
+				
+				<div class="social_box"><div id="___plusone_0" style="height: 20px; width: 32px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; background-position: initial initial; background-repeat: initial initial; "><iframe allowtransparency="true" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px; " tabindex="0" vspace="0" width="100%" id="I0_1344609851065" name="I0_1344609851065" src="./files/fastbutton.html" title="+1"></iframe></div></div>
+				
+				<div class="social_box">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAUCAIAAACmgTKJAAAABGdBTUEAALGPC/xhBQAAAzdJREFUSEvVl01IVFEUx23bolWLRPqyIIiCol1tIiIw2rRoEbaJWgRCEIVYCm1yKjIkU8xIm1JbWE3B5MegZkzOWPYyQUeLqWlCRkRGxmaajyyp3/M8L6+ZgYGB4jUc9Lxzzz33d//n3ue4IvVjcTQU/RhOFFjys3n1yh1FqwpeBSMjoW+/rPqBDcKCNi1kVUKDC8L/hzK5sGhlM7TMidjmmbA5h3zTkZyZfyPBoIymfiqzvxwLzSfNkf31XUVV7ftqHprjpB203TdbXZfXPCsPXwvOIUTmRIMyklhQVvFkqPBs06l7rp6xIMHq/okNtc/XX+0uqrCX3nKqNCqi7oUHvWtOXi5r7sIffB8y18nDP3SljVKZE7NQspWt1zoRD6wyx/Duu6+LG4c31nvWXnoKfSAcG5mal0I0dyr8FUqvfxofLas6XhBH8r0X7wi0U5ssrXuEc7NH23O+gThNmIl9J9I7GiipthNkq0Qcw5Obymq2nL4OK4qaWQ1Kksw28Hlue4Mb/VARxOImjZ/4oBeeaWwZeKeSKQdl/3iQCMuzhjgiMD6IxxseyxAcDq+PIYfmpxU4bMw98WXnuXpAKQUx3OSwTzNPdkoEO9H5QecTxCVDzm03+g7fdtW6tKyUlGZhzglk6AEWdZAHOZEQVjaDwUECWDCBSKS8tZs0aqqOp6lmULIAxv7EwRC8pGNcIUrTOaPEKaHS6L5oKRGWR0Ii8EGJL+pCCROgGEGkhYwhFeGoMJ27yKgqrpw/KP2z8aNNzyo7Pe1aoNw1uWtZRRGSw8raaSWkcYpSGgoTaYIrqwIBJdPZZLPrDc3lUDLK2eVAIzaPpKGlHMq0VQzKQCSJMUahY63udTYnWKrd+AdaBrkiesJSpjI2hiSwqgo8ctp4pJtysfCRE9l4lD2QT4Q0iTAFStJ4K0tEFZSyy5ThGOuBiDGf21M58OmIw4dxQO1v9cuhT1hKSDP+1sr2xOJJ/f6K6vhqCM30oWicfCklbwkSVAVWIQdLW8ugBNFsoqs6wjymJeT9mFkK3JzVslPmnPaPEwxK30zcyqZT8h2zzz/LzbKmwaZ/C04kU/ziBWFNg43/eX4DKuVtXDsPfl0AAAAASUVORK5CYII=" width="55px" height="20px" style="cursor: pointer; " abtwitterbadge="1" abpl="1" id="abTwitterBadge_0"><a href="https://twitter.com/thecodeplayer" class="twitter-follow-button" data-show-count="false" style="display: none; " abtwitterbadge="1">Follow @thecodeplayer</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+				
+				<div class="social_box">
+					<a href="http://feeds.feedburner.com/TheCodePlayer"><img src="./files/TheCodePlayer" height="26" width="88" style="border:0; margin-bottom: -9px;" alt=""></a>
+				</div>
+			</div>
+			
+			<a href="" class="logo">TheCodePlayer<span class="superscript">alpha</span></a>
+		-->
+		</header>
+		<div id="wrapper">
+			<div id="content">
+				<h1 class="banner"><!--Sugestão de Livros para Bons
+Programadores--></h1>
+				<!-- <h2 class="banner">Arquitetura, Design, Boas Práticas, Tecnologia,
+...</h2> -->
+				<div class="main">
+
+<ul class="vm" id="container">
+<!--
+					<li>
+						<img src="" >
+						<div class="title">
+						</div>
+					</li>
+-->
+
+					<li>
+						<img
+src="https://lh4.googleusercontent.com/-MbqmpWUPwqQ/UCUozIuWHII/AAAAAAAAD8k/bVe_nGp_e_U/s288/arquitetura.png" >
+						<div class="title">Introdução à Arquitetura e Design de Software
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh3.googleusercontent.com/-nUAdjtDklFk/UCUo1-6uD0I/AAAAAAAAD_8/CUfYnPGQetc/s288/codigo-limpo.jpeg" >
+						<div class="title">Código Limpo
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh3.googleusercontent.com/-plz9OL6GRYs/UCUo1LchX-I/AAAAAAAAEAw/jTJwhBTIMfg/s288/codificador-limpo.jpeg"
+>
+						<div class="title">O Codificador Limpo
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh4.googleusercontent.com/-NS2-O_mhU_c/UCUo7LYSeSI/AAAAAAAAEAE/qN-ZesFGtew/s288/homem-mes.jpeg" >
+						<div class="title">O Mítico Homem-Mês
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh4.googleusercontent.com/-uVE167dkyT4/UCUo9lFEheI/AAAAAAAAEAI/sTZ3G44SK_k/s288/padroes-projeto.jpeg" >
+						<div class="title">Padrões de Projeto
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh4.googleusercontent.com/-SYHJ84P_5dU/UCUyStHkW1I/AAAAAAAAEA4/GxpUDIu2TLw/s800/refatoracao.jpeg" >
+						<div class="title">Refatoração
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh5.googleusercontent.com/-Uq8dWRSzek0/UCUowr1RXBI/AAAAAAAAD8U/5aR_tmmoY6Y/s288/arquitetura-corporativas.jpeg" >
+						<div class="title">Padrões de Arquitetura de Aplicações Corporativas
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh4.googleusercontent.com/-n1s1YEt31Q4/UCUo7jkQ57I/AAAAAAAAD-I/N2qxBQ7bWwM/s288/ddd.jpeg" >
+						<div class="title">Domain-Driven Design
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh5.googleusercontent.com/-b9uaS9ZIrLY/UCUpCFAnUjI/AAAAAAAAD_k/3rvqsNynCTg/s288/tdd.jpeg" >
+						<div class="title">TDD Desenvolvimento Guiado Por Testes
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh6.googleusercontent.com/-O2V_jSbdk7Q/UCUpBR43gNI/AAAAAAAAEAM/zaZtY71SZuM/s288/startup-enxuta.jpeg" >
+						<div class="title">A Startup Enxuta
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh3.googleusercontent.com/-p5v--TOmWtw/UCUzkwXmC9I/AAAAAAAAEBU/W4tGjbg9NM8/s288/java-efetivo.jpeg">
+						<div class="title">Java Efetivo
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh5.googleusercontent.com/-u5cCNaqkh-s/UCUo35YAszI/AAAAAAAAD90/ZDHb4D5BTYw/s288/continuos-delivery.jpeg" >
+						<div class="title">Continuous Delivery
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh3.googleusercontent.com/-8GSSe73scZk/UCUovxheVdI/AAAAAAAAD78/YPARrTbihaQ/s288/97-things.jpeg" >
+						<div class="title">97 Things Every Software Architect Should Know
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh6.googleusercontent.com/-vqAAzyQ0OdM/UCUovP5Qc4I/AAAAAAAAEAQ/um8Vz_1-KyU/s288/7-languages.jpeg" >
+						<div class="title">Seven Languages in Seven Weeks
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh5.googleusercontent.com/-zrKl5HWUNWQ/UCUzGlIpOqI/AAAAAAAAEBE/4bndMESilzg/s288/agile-developer.jpeg" >
+						<div class="title">Pratices of an Agile Developer
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh3.googleusercontent.com/-FD0yVlfP6v8/UCUo83NOgMI/AAAAAAAAEAs/y2AEID-Zskc/s800/legacy-code.jpeg" >
+						<div class="title">Working Effectively With Legacy Code
+						</div>
+					</li>
+					<li>
+						<img
+src="https://lh6.googleusercontent.com/-f66iyAEPJ1s/UCUwoA1cJrI/AAAAAAAAEAg/QtRo4yBiV9U/s288/mochileiro.jpeg" >
+						<div class="title">O Guia do Mochileiro da Galaxias
+						</div>
+					</li>
+</ul>
+
+
+			</div>
+		</div>
+
+	<script src="./files/jquery.js"></script>
+<script src="./files/modal.js"></script>
+<script src="./files/ajax.js"></script>
+
+	<script type="text/javascript" src="./files/jquery.wookmark.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.vm>li').wookmark({offset: 20, itemWidth: 230, autoResize: true, container: $("#container")});
+		})
+	</script>
+
+			
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-29769082-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+	<!-- Place this render call where appropriate - for google +1 button-->
+	<script type="text/javascript">
+	  (function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+
+	
+
+</div></body></html>
